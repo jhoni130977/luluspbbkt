@@ -7,7 +7,8 @@ function searchMovies() {
 	  </div>
 		`);
     $.ajax({
-        url: 'https://smkpembinabangsabkt.sch.id/lulusapi/lulus.php',
+        url: 'https://smkpembinabangsabkt.sch.id/kelulusan/lulus.php',
+		//url: 'http://localhost/KELULUSAN/SMKPB/lpb/lulus.php',
         type: 'get',
         dataType: 'json',
 		//responseType:'application/json',
@@ -24,9 +25,9 @@ function searchMovies() {
 						$('#movie-list').html(`
 						    <div class="row mt-3 justify-content-center">
 								<table border=0 width=100%>
-									<tr><td>No. Ujian </td><td>:<b> ` + data.no + `</td></tr>
-									<tr><td>Nama Siswa </td><td>:<b> ` + data.nama + `</td></tr>
-									<tr><td>Sekolah Asal </td><td>:<b> ` + data.sekolah + `</td></tr>
+									<tr><td>No. Ujian </td><td>:</td><td><b> ` + data.no + `</td></tr>
+									<tr><td valign=top>Nama Siswa </td><td valign=top>:</td><td><b> ` + data.nama + `</td></tr>
+									<tr><td valign=top>Komp. Keahlian </td><td valign=top>:</td><td><b> ` + data.sekolah + `</td></tr>
 								</table><br><br><p><p>
 								<table width=100%>
 									<tr><td><h4><center>&nbsp;</h4></td></tr>
@@ -51,9 +52,9 @@ function searchMovies() {
 						$('#movie-list').html(`
 						    <div class="row mt-3 justify-content-center">
 								<table border=0 width=100%>
-									<tr><td>No. Ujian </td><td>:<b> ` + data.no + `</td></tr>
-									<tr><td>Nama Siswa </td><td>:<b> ` + data.nama + `</td></tr>
-									<tr><td>Sekolah Asal </td><td>:<b> ` + data.sekolah + `</td></tr>
+									<tr><td>No. Ujian </td><td>: </td><td><b> ` + data.no + `</td></tr>
+									<tr><td valign=top>Nama Siswa </td><td valign=top>: </td><td><b> ` + data.nama + `</td></tr>
+									<tr valign=top><td valign=top>Komp. Keahlian </td><td valign=top>: </td><td><b> ` + data.sekolah + `</td></tr>
 								</table><br><br><p><p>
 								<table width=100%>
 									<tr><td><h4><center>&nbsp;</h4></td></tr>
@@ -68,9 +69,9 @@ function searchMovies() {
 						$('#movie-list').html(`
 						    <div class="row mt-3 justify-content-center">
 								<table border=0 width=100%>
-									<tr><td>No. Ujian </td><td>:<b> ` + data.no + `</td></tr>
-									<tr><td>Nama Siswa </td><td>:<b> ` + data.nama + `</td></tr>
-									<tr><td>Sekolah Asal </td><td>:<b> ` + data.sekolah + `</td></tr>
+									<tr><td>No. Ujian </td><td>:</td><td><b> ` + data.no + `</td></tr>
+									<tr><td valign=top>Nama Siswa </td><td valign=top>:</td><td><b> ` + data.nama + `</td></tr>
+									<tr><td valign=top>Komp. Keahlian </td><td valign=top>:</td><td><b> ` + data.sekolah + `</td></tr>
 								</table><br><br><p><p>
 								<table width=100%>
 									<tr><td><h4><center>&nbsp;</h4></td></tr>
